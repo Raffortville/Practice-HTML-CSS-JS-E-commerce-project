@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap')
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --mainPink: #ef7998;
+    --mainYellow: rgb(249, 228, 148);
+    --mainWhite:   #fff;
+    --mainBlack: #000;
+    --yellowTrans:rgba(249, 228, 148, 0.5);
+    --mainGrey:rgb(238, 238, 238);
+}
+
+body {
+
+    font-family: 'Fredoka One', cursive; ;
+    color: black;
+    background: var(--mainWhite);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    min-height: 13vh;
+    align-items: center;
+    background-color: var(--mainWhite);
+    padding-top: 3px;
+}
+
+.navbar-brand i {
+
+    color: var(--mainPink);
+    margin-bottom: 10px;
+}
+
+ nav ul {
+    display:flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+nav ul li {
+    font-size: 1.8em;
+    list-style: none;
+      
+}
+
+nav ul li :hover {
+    text-decoration: none;
+    color: var(--mainBlack);
+    transition: all 0.3s ease-in-out;
+}
+nav ul li a {
+
+    color: var(--mainPink);
+}
+
+
+.card-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10rem;
+    width: 215px;
+    height: 50px;
+    padding: 10px;
+   
+}
+
+
+.count-card  {
+    display: flex; 
+    justify-content: space-evenly;
+    width: 215px;
+    height: 50px;
+    border-radius: 5px;
+    border: solid 2px var(--mainBlack);
+    padding: 10px;
+    
+}
+
+.card-titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.titre {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+
+
+.titre h1{
+    color: var(--mainPink);
+    font-size: 3.5rem;
+    margin-left: 15px;
+  
+}
+
+.card-titre a{
+
+    color: var(--mainBlack);
+    text-decoration: none;
+    font-size: 1.5em;
+    border: groove black 2px; 
+    border-radius: 5px;  
+    padding: 10px 15px; 
+}
+
+
+.card-titre a:hover{
+
+    color: var(--mainPink);
+    background-color: var(--mainBlack);
+}
+
+.burger {
+
+    display: none;
+    cursor: pointer;
+}
+
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: var(--mainPink);
+    margin: 5px;
+    
+}
+
+
+.bg-img{
+    margin-top: 14vh;
+    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+    url("../img/headerBcg.jpeg") center/cover fixed no-repeat;
+    min-height: calc(100vh - 15vh);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.about {
+  min-height:100vh;
+ 
+}
+
+
+.image {
+
+    margin-top: 30px;
+}
+
+.presentation {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  
+}
+
+
+
+.wrapPresentation h2 {
+     
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.wrapPresentation h2 span{
+    margin-left: 8px;
+    font-size: 3.2rem;
+    color: var(--mainPink);
+}
+.wrapPresentation p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-style: italic;
+    color: var(--mainPink);
+    font-size: 1em;
+    font-family: 'Lobster', cursive;
+}
+
+
+.wrapPresentation span a{
+    
+    color: var(--mainBlack);
+    text-decoration: none;
+    font-size: 0.8em;
+    border: groove black 2px; 
+    border-radius: 5px;  
+    padding: 10px 15px; 
+
+}
+
+.wrapPresentation span a:hover{
+color: var(--mainPink);
+background-color: var(--mainBlack);
+}
+
+
+
+.imgPresentation {
+    margin-top: 80px;
+    width: 100%;
+    
+}
+
+#Store {
+    background-color: var(--mainGrey);
+    min-height: 100vh;
+}
+
+.serch-menu {
+  
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serch-menu h2 {
+    
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-top: 100px;
+
+}
+
+.serch-menu  h2 span {
+    margin-left: 8px;
+    font-size: 3.2rem;
+    color: var(--mainPink);
+
+}
+.bouto {
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.bouto a {
+    color: var(--mainBlack);
+    text-decoration: none;
+    font-size: 0.7r em;
+    border: groove black 2px; 
+    border-radius: 5px;  
+    padding: 8px 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.bouto a:hover {
+
+    color: var(--mainPink);
+    background-color: var(--mainBlack);
+}
+.bar {
+  
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex: row;
+    justify-content: center;
+}
+
+.bar span {
+    border: groove black 2px; 
+    border-radius: 5px;  
+    padding: 5px 10px;
+    background-color: var(--mainPink);
+    cursor: pointer;
+
+}
+
+.bar input {
+    border: groove black 2px; 
+    border-radius: 5px;  
+    padding: 5px 10px;
+    min-width: 40vw;
+}
+
+.row.vitrine {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    margin-bottom: 15px; 
+}
+
+.card {
+    
+}
+
+.zoom {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; 
+}
+
+.card-img-top {
+    transition: 1s; 
+}
+
+
+.zoom:hover .card-img-top {
+    transform: scale(1.3);  
+}
+
+.caddie {
+    position: absolute;
+    background-color: var(--mainYellow);
+    display: block;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--mainPink); 
+    transition: 0.5s;
+    opacity: 0;
+    transform: translate(100%, 100%);
+}
+
+.caddie:hover{
+
+    cursor: pointer;
+    color: var(--mainBlack);
+    
+}
+
+.zoom:hover .caddie {
+    transform:translate(10%,10%);
+    opacity: 1;
+}
+
+.modal {
+
+
+}
+
+@media screen and (max-width: 768px){
+
+    .count-card {
+        display: none;
+    }
+
+    .card-info {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        min-height: 17vh;
+    }
+
+    .navbar-brand i {
+        display: block;
+        position: absolute;
+        top: 4vh;
+        left: 15px;
+    }
+
+    nav ul {
+    
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 17vh;
+        height: 10vh;
+        padding-left: 15px;
+        width: 100%;
+        background: var(--mainWhite);
+        opacity: 0;
+        transition-duration: 300ms;
+       
+    }
+
+    nav ul.open {
+        visibility: visible;
+        opacity: 1;
+        height: 60vh;
+        z-index: 1;
+    }
+
+    .burger {
+        position: absolute;;
+        display: block;
+        right: 15px;
+    }
+
+    
+
+}
