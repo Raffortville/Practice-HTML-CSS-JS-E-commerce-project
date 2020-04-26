@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 * {
     margin: 0;
@@ -85,11 +84,115 @@ nav ul li a {
     
 }
 
+.count-card:hover {
+    color: var(--mainPink);
+    background-color: var(--mainBlack);
+    border: none;
+    cursor: pointer;
+}
+
+.wrapAchat {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.8);
+    z-index: 100;
+    right: 0;
+    top: 83px;
+    border: 1px solid var(--mainBlack);
+    transition: ease-out 0.3s;
+    width: 420px;
+    min-height: 30%;
+    transform: translate(100%,0%);
+   
+}
+
+.visible {
+    transform: translate(0%, 0%); 
+}
+
+.modalItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.wrapAchat h4{
+    font-size: 1.2em;
+}
+
+.modalTitre p {
+
+  color: var(--mainPink);
+  font-style: italic;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+.modalBouto {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.modalBouto a {
+
+    color: var(--mainPink);
+    background-color: var(--mainBlack);
+    text-decoration: none;
+    font-size: 0.8em; 
+    border-radius: 5px;  
+    padding: 8px 13px; 
+    letter-spacing: 1px;
+}
+
+.modalBouto a:hover{
+
+    background-color: transparent;
+    color: #000;
+    border: 2px solid black;
+}
+
+.wrapAchat span i {
+
+    color: var(--mainPink);
+    cursor: pointer;
+    transition: linear 0.3s;
+}
+
+.wrapAchat span i:hover{
+
+    color: #000;
+    transform: scale(1.6);
+    
+}
+
+.modalTotal {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     align-self: center;
+     width: 38%;
+}
+
+.wrapAchat img {
+
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+}
+
 .card-titre {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    
 }
 
 .titre {
@@ -125,6 +228,7 @@ nav ul li a {
 
     color: var(--mainPink);
     background-color: var(--mainBlack);
+    border: none;
 }
 
 .burger {
@@ -173,10 +277,8 @@ nav ul li a {
     flex-direction: column;
     justify-content:center;
     align-items: center;
-  
+
 }
-
-
 
 .wrapPresentation h2 {
      
@@ -314,9 +416,7 @@ background-color: var(--mainBlack);
     margin-bottom: 15px; 
 }
 
-.card {
-    
-}
+
 
 .zoom {
     position: relative;
@@ -351,7 +451,7 @@ background-color: var(--mainBlack);
 
     cursor: pointer;
     color: var(--mainBlack);
-    
+   
 }
 
 .zoom:hover .caddie {
@@ -359,10 +459,6 @@ background-color: var(--mainBlack);
     opacity: 1;
 }
 
-.modal {
-
-
-}
 
 @media screen and (max-width: 768px){
 
