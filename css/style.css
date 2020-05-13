@@ -7,6 +7,16 @@
     box-sizing: border-box;
 }
 
+html {
+
+    scroll-behavior: smooth;
+}
+
+.animate__animated.animate__shakeY{
+    
+    animation-duration: 1s;
+}
+
 :root {
 
     --mainPink: #ef7998;
@@ -47,8 +57,7 @@ nav {
 
 nav ul li {
     font-size: 1.8em;
-    list-style: none;
-      
+    list-style: none;    
 }
 
 nav ul li :hover {
@@ -69,9 +78,7 @@ nav ul li a {
     width: 215px;
     height: 50px;
     padding: 10px;
-   
 }
-
 
 .count-card  {
     display: flex; 
@@ -81,7 +88,6 @@ nav ul li a {
     border-radius: 5px;
     border: solid 2px var(--mainBlack);
     padding: 10px;
-    
 }
 
 .count-card:hover {
@@ -97,6 +103,8 @@ nav ul li a {
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
+    padding-left: 40px;
+    padding-right: 30px;
     position: fixed;
     border-radius: 5px;
     background-color:rgba(255, 255, 255, 0.8);
@@ -105,10 +113,9 @@ nav ul li a {
     top: 83px;
     border: 1px solid var(--mainBlack);
     transition: ease-out 0.3s;
-    width: 420px;
+    width: 500px;
     min-height: 30%;
     transform: translate(100%,0%);
-   
 }
 
 .visible {
@@ -118,26 +125,77 @@ nav ul li a {
 .modalItem {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     width: 100%;
 }
 
 .wrapAchat h4{
     font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+.modalTitre {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plumin{
+    margin-top: 5px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.plumin p {
+
+   margin-right: 48px;
+}
+
+.plumin a {
+
+    color: var(--mainBlack);
+    text-decoration: none;
+    font-size: 1em;
+    border: solid black 2px; 
+    border-radius: 5px; 
+    padding-left: 6px; 
+    padding-right: 6px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.plumin a:hover {
+     
+    color: var(--mainPink);
+    background-color: var(--mainBlack);
+    cursor: pointer;
+    border: none;
 }
 
 .modalTitre p {
 
   color: var(--mainPink);
-  font-style: italic;
   font-size: 1em;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+   
 }
+
 .modalBouto {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin-top: 10px;
 }
 
+.modalTitre a {
+    color: var(--mainPink);
+
+}
 
 .modalBouto a {
 
@@ -148,6 +206,7 @@ nav ul li a {
     border-radius: 5px;  
     padding: 8px 13px; 
     letter-spacing: 1px;
+    outline: none;
 }
 
 .modalBouto a:hover{
@@ -155,6 +214,7 @@ nav ul li a {
     background-color: transparent;
     color: #000;
     border: 2px solid black;
+    cursor: pointer;
 }
 
 .wrapAchat span i {
@@ -168,23 +228,17 @@ nav ul li a {
 
     color: #000;
     transform: scale(1.6);
-    
 }
 
-.modalTotal {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-     align-self: center;
-     width: 38%;
+#modalTotal {
+    align-self: center;
+    width: 100%;
 }
 
 .wrapAchat img {
 
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     border-radius: 20%;
 }
 
@@ -192,7 +246,6 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .titre {
@@ -205,13 +258,14 @@ nav ul li a {
 }
 
 
-
 .titre h1{
     color: var(--mainPink);
     font-size: 3.5rem;
     margin-left: 15px;
-  
+    margin-right: 25px;
 }
+
+
 
 .card-titre a{
 
@@ -248,7 +302,7 @@ nav ul li a {
 
 
 .bg-img{
-    margin-top: 14vh;
+    margin-top: 15vh;
     background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
     url("../img/headerBcg.jpeg") center/cover fixed no-repeat;
     min-height: calc(100vh - 15vh);
@@ -256,15 +310,12 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-
 
 .about {
   min-height:100vh;
  
 }
-
 
 .image {
 
@@ -315,8 +366,8 @@ nav ul li a {
 .wrapPresentation span a:hover{
 color: var(--mainPink);
 background-color: var(--mainBlack);
+border: none;
 }
-
 
 
 .imgPresentation {
@@ -343,16 +394,16 @@ background-color: var(--mainBlack);
     font-style: italic;
     letter-spacing: 2px;
     margin-top: 100px;
-
 }
 
 .serch-menu  h2 span {
     margin-left: 8px;
     font-size: 3.2rem;
     color: var(--mainPink);
-
 }
+
 .bouto {
+
     padding: 20px;
     margin-top: 20px;
     display: flex;
@@ -377,11 +428,12 @@ background-color: var(--mainBlack);
 
     color: var(--mainPink);
     background-color: var(--mainBlack);
+    border: none;
 }
 .bar {
   
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
     display: flex;
     flex: row;
@@ -405,7 +457,7 @@ background-color: var(--mainBlack);
 }
 
 .row.vitrine {
-    margin-top: 100px;
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -415,7 +467,6 @@ background-color: var(--mainBlack);
 .item {
     margin-bottom: 15px; 
 }
-
 
 
 .zoom {
