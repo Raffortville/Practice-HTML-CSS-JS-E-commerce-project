@@ -1,8 +1,7 @@
 # Practice-JS
 
+Mini E commerce project  HTML CSS JS.
 
-Mini projet  HTML CSS JS.
+Reproduction of the tutorial e commerce site  https://romeojeremiah.github.io/Modal-JavaScript-Project/
 
-Reproduction  du site  suivant    https://romeojeremiah.github.io/Modal-JavaScript-Project/
 
-sans regarder les codes sources (juste les images ).
